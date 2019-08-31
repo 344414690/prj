@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC   
+	    "-//mybatis.org//DTD Config 3.0//EN"  
+	    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+	    
+<configuration>  
+		<!-- 指明方言  -->
+		<properties>
+			<property name="dialect" value="mysql"/>
+		</properties>
+		<!-- 指明插件位置  -->
+	   	<plugins>
+	   		<plugin interceptor="com.woniuxy.mybatis.PageInterceptor"></plugin>
+	   	</plugins>
+</configuration>      

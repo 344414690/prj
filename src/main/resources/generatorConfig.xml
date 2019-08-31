@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+ "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+	<classPathEntry location="D:\Spring-Tool\mysql-connector-java-5.0.8-bin.jar"/>	
+  <context id="context1" >
+	<!--  -->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/prj?characterEncoding=UTF-8" userId="root" password="930116" />
+   	<!-- 生成的模型放的位置 -->
+    <javaModelGenerator targetPackage="com.woniuxy.domain" targetProject="prj" />
+    <!-- 生成的Map放的位置  -->
+    <sqlMapGenerator targetPackage="com.woniuxy.dao" targetProject="prj" />
+    <!--生成的XML文件放的位置  -->
+    <javaClientGenerator targetPackage="com.woniuxy.dao" targetProject="prj" type="XMLMAPPER" />
+    
+    <!-- 表示要逆向哪个表  -->
+	<table schema="" tableName="student" />
+    
+ 	   
+ 	<!-- <table schema="" tableName="nation" /> -->
+	<!--<table schema="" tableName="roletree" /> -->
+  </context>
+</generatorConfiguration>
